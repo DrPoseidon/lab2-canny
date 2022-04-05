@@ -15,7 +15,7 @@ imgElement.onload = function() {
   const canvas = document.getElementById('canvasOutput');
   const image = canvas.toDataURL();
   const aDownloadLink = document.createElement('a');
-  aDownloadLink.download = imgElement.src;
+  aDownloadLink.download = `${imgElement.src}.png`;
   aDownloadLink.href = image;
   aDownloadLink.click();
 
